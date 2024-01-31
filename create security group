@@ -1,0 +1,17 @@
+
+aws ec2 create-security-group \
+--group-name Week2HW \
+--description "Week 2 HomeWork" \
+--vpc-id vpc-0a0afb851d9902a23
+
+aws ec2 authorize-security-group-ingress \
+--group-name Week2HW \
+--protocol tcp \
+--port 22 \
+--cidr 0.0.0.0/0
+
+aws ec2 authorize-security-group-ingress \                                                                                                                           
+--group-name Week2HW \ 
+--protocol tcp /
+--port 3000 /
+--cidr 0.0.0.0/0
