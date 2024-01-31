@@ -1,3 +1,6 @@
-aws ec2 describe-ami-instant-type-id 
---filters "Name=LinuxServer,Values=Amazon Linux AMI * x86_64 HVM GP2"  
+aws ec2 describe-instant-id \
+--instant-type t3a.medium\
+--vpc-name iouBeam\
+--vpc-id \
+--filters "Name=LinuxServer, Values=Amazon Linux AMI * x86_64 HVM GP2"  \
 --output text
