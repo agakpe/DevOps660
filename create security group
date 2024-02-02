@@ -7,11 +7,11 @@ aws ec2 create-security-group \
 aws ec2 authorize-security-group-ingress \
 --group-name Week2HW \
 --protocol tcp \
---port 22 \
+--port 3000 \
 --cidr 0.0.0.0/0
 
-aws ec2 authorize-security-group-ingress \                                                                                                                           
---group-name Week2HW \ 
---protocol tcp /
---port 3000 /
+aws ec2 authorize-security-group-ingress \
+--group-name Week2HW \
+--protocol tcp \
+--port 3000 \
 --cidr 0.0.0.0/0
